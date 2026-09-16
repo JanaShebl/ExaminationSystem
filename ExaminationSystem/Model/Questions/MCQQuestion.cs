@@ -13,13 +13,7 @@ namespace ExaminationSystem.Model.Questions
 
         public override void AddQuestion()
         {
-            do
-            {
-                Console.Write("Enter Question Header : ");
-                Header = Console.ReadLine();
-                Header = Header?.Trim().ToLower(); 
-            }
-            while (string.IsNullOrEmpty(Header));
+            Header = "MCQ)";
 
             do
             {

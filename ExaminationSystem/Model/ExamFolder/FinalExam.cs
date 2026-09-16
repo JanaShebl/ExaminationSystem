@@ -92,6 +92,7 @@ namespace ExaminationSystem.Model.ExamFolder
                 }
             }
 
+            Console.Clear();
             Console.WriteLine($"Total Marks: {totalMarks}");
             for (int i = 0; i < QuestionsList.Count; i++)
             {

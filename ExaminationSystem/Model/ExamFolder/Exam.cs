@@ -17,11 +17,11 @@ namespace ExaminationSystem.Model.ExamFolder
             int time;
             do
             {
-                Console.Write("Enter Time of Exam in Minutes: ");
-                isValidTime = int.TryParse(Console.ReadLine(), out time) && time > 0;
+                Console.Write("Enter Time of Exam in Minutes between 30 and 180: ");
+                isValidTime = int.TryParse(Console.ReadLine(), out time) && time >= 30 && time <= 180;
                 if (!isValidTime)
                 {
-                    Console.WriteLine("Invalid Time. Please enter a positive number.");
+                    Console.WriteLine("Invalid Time. Please enter a number between 30 and 180.");
                 }
             } while (!isValidTime);
 
